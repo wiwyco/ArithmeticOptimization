@@ -11,16 +11,7 @@ dimensionality and increases in variable meaningfulness both result in an increa
 accomplish both these goals, this module uses basic arithmetic combinations of features to produce features that
 better partition frequently occurring data structures for the purposes of predicting a target variable more effectively.
 
-For example, the first dataframe below would produce the subsequent one. The features X and Y are independant variables
-while the variable Z is a dependant variable.
-
-| X | Y | Z |
-| 1 | 0 | 1 |
-|.75|0.5| 0 |
-
-| X | Y | X+X | X+Y | Y+Y | X*X | X*Y | Y*Y | X-Y | Y-X | X/Y | Y/X | Z |
-| 1 | 0 |  2  |  1  |  0  |  1  |  0  |  0  |  0  | -1  | NaN |  0  | 1 |
-|.75|0.5| 1.5 |1.25 |  1  |0.563|0.375|0.25 |0.25 |-0.25| 1.5 |0.667| 0 |
+For example, the variables X and Y would create the subsequent features X, Y, X+X, X+Y, Y+Y, X*X, X*Y, Y*Y, X-Y, Y-X, X/Y, and Y/X.
 
 This frame is then run through a multiple regression and the variables with the lowest p-values are selected and
 assembled into a final dataframe with the dependant variable.
