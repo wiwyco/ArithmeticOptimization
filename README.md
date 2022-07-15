@@ -15,12 +15,10 @@ For example, the first dataframe below would produce the subsequent one. The fea
 while the variable Z is a dependant variable.
 
 | X | Y | Z |
-=============
 | 1 | 0 | 1 |
 |.75|0.5| 0 |
 
 | X | Y | X+X | X+Y | Y+Y | X*X | X*Y | Y*Y | X-Y | Y-X | X/Y | Y/X | Z |
-=========================================================================
 | 1 | 0 |  2  |  1  |  0  |  1  |  0  |  0  |  0  | -1  | NaN |  0  | 1 |
 |.75|0.5| 1.5 |1.25 |  1  |0.563|0.375|0.25 |0.25 |-0.25| 1.5 |0.667| 0 |
 
