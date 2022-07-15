@@ -25,7 +25,6 @@ while the variable Z is a dependant variable.
 This frame is then run through a multiple regression and the variables with the lowest p-values are selected and
 assembled into a final dataframe with the dependant variable.
 
-
 HOW TO USE
 ------------------------------------
 Input the full dataframe, including the dependant variable(s), the list of dependant feature names, the quantity of
